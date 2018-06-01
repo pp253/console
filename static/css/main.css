@@ -1,0 +1,47 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+#app {
+  padding: 12px;
+  margin: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  width: calc(100vw - 24px);
+  min-height: calc(100vh - 24px);
+  background-color: #000;
+}
+
+#app .line {
+  display: block;
+}
+
+#app .line span {
+  color: #fff;
+  font-family: monospace;
+  font-size: 18px;
+  white-space: pre-wrap;
+  text-shadow: 0 0 4px #fff;
+}
+
+#app .line .speaker {
+  color: rgb(0, 255, 213);
+}
+
+#app .line .speaker::after {
+  content: ' ';
+}
+
+#app .input .sign {
+}
+#app .input #input {
+  outline: none;
+  background-color: transparent;
+  color: #fff;
+  font-family: monospace;
+  font-size: 18px;
+  border: none;
+  width: calc(100vw - 40px);
+  text-shadow: 0 0 4px #fff;
+}
