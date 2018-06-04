@@ -45,6 +45,7 @@ window.onload = () => {
       User.history.push(str)
       User._historyIndex = 0
       input.value = ''
+      window.scrollTo(0, document.body.scrollHeight)
     } else if (e.key === 'ArrowUp') {
       if (User._historyIndex < User.history.length) {
         User._historyIndex++
